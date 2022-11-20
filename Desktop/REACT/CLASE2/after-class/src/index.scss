@@ -1,0 +1,16 @@
+ /* Abrsacts */
+ @use "./scss/abstracts/_mixin.scss";
+ @use "./scss/abstracts/_variables.scss";
+ 
+ /* Base */
+ 
+ @use "./scss/base/_base.scss";
+ @use "./scss/base/_reset.scss";
+
+body {
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
