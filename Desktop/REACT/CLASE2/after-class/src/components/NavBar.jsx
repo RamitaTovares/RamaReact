@@ -1,4 +1,5 @@
 import React from "react";
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
     return (
@@ -24,6 +25,9 @@ const NavBar = () => {
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div className="col-md-6 d-flex align-items-center justify-content-end">
+                    <CartWidget />
             </div>
         </nav>
     )
