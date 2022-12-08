@@ -6,7 +6,7 @@ const Promocion = () => {
             <div className="container py-5">
                 <div className="row">
                     <div className="col-md-2">
-                        <img src="./images/logosf1.png " alt="Ferreteria SF" width="123" />
+                        <img src={"images/logosf1.png "} alt="Ferreteria SF" width="123" />
                     </div>
                     <div className="col-md-8 d-flex align-items-center">
                         <div>
