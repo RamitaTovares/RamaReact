@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import arrayProductos from "./json/productos.json";
-import ItemCount from "./ItemCount";
 import ItemList from "./ItemList";
+import Loader from "./Loader";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const { id } = useParams();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const promesa = new Promise((resolve, reject) => {
@@ -19,15 +20,12 @@ const ItemListContainer = () => {
       }, 2000);
     });
 
-    promesa.then((data) => {
-      setItems(data);
-    });
+    promesa.then((data) => setItems(data)).finally(() => setLoading(false));
   }, [id]);
 
-  return (
+  return (  
     <div className="container">
-      <ItemList items={items} />
-      <ItemCount stock={4} />
+      {loading ? <Loader /> : <ItemList items={items} />}
     </div>
   );
 };
