@@ -7,7 +7,7 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-lg navbar-white lg">
       <div className="container-fluid">
         <Link className="navbar-brand" to={"/"}>
-          <img src="images/logosf2.png" alt="SF" width="55" />
+          <img src="/images/logosf2.png" alt="SF" width="55" />
         </Link>
         <button
           className="navbar-toggler"
@@ -50,10 +50,10 @@ const NavBar = () => {
                 Nosotros
               </NavLink>
             </li>
-          </ul>
+          </ul> 
         </div>
       </div>
-      <div className="col-md-6 d-flex align-items-center justify-content-end">
+      <div className="col-md-6 justify-content-end">
         <CartWidget />
       </div>
     </nav>

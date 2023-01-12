@@ -1,10 +1,82 @@
 [
-    {"id":1, "nombre":"Lampara Vintage", "Watts":10, "descripcion":"Lampara Vintage Galponera", "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_993667-MLA31112641670_062019-F.webp", "precio":1500, "stock":10, "categoria":"Vintage"},
-    {"id":2, "nombre":"Lampara Led", "Watts":12, "descripcion":"Clasica Lampara Led", "imagen":"https://http2.mlstatic.com/D_NQ_NP_698762-MLA31022952358_062019-O.webp", "precio":1600, "stock":9, "categoria":"Iluminacion"},
-    {"id":3, "nombre":"Reflector", "Watts":30, "descripcion":"Clásico Reflector para lugares amplios", "imagen":"https://http2.mlstatic.com/D_NQ_NP_977566-MLA45386857132_032021-O.webp", "precio":1700, "stock":8, "categoria":"Iluminacion"},
-    {"id":4, "nombre":"Lampara Gota", "Watts":9, "descripcion":"Lampara Gota Estilo Vintage Nordico", "imagen":"https://http2.mlstatic.com/D_NQ_NP_943123-MLA49085875503_022022-O.webp", "precio":800, "stock":7, "categoria":"Iluminacion"},
-    {"id":6, "nombre":"Lampara Globo Vintage", "Watts":12, "descripcion":"Hermosa Lampara de Globo Estilio vintage.", "imagen":"https://http2.mlstatic.com/D_NQ_NP_877431-MLA49323841527_032022-C.jpg", "precio":1300, "stock":6, "categoria":"Vintage"},
-    {"id":7, "nombre":"Lampara Filamento Vintage", "Watts":10, "descripcion":"Lampara Clasica Galponera, con filamento Vintage.", "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_961497-MLA31083425754_062019-F.webp", "precio":700, "stock":12, "categoria":"Vintage"},
-    {"id":8, "nombre":"Lampara Fuegos Artificaiales", "Watts":15, "descripcion":"Lampara muy polémica con Fuegos Artificiales.", "imagen":"https://http2.mlstatic.com/D_NQ_NP_776385-MLA52541864633_112022-O.webp", "precio":800, "stock":10, "categoria":"Iluminacion"},
-    {"id":9, "nombre":"Lampara Vela Vintage", "Watts":9, "descripcion": "Lampara Vela tipo Vintage", "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_669469-MLA44569040338_012021-F.webp", "precio":600, "stock":8, "categoria":"Vintage"}
+  {
+    "id": 1,
+    "nombre": "Lampara Vintage",
+    "Watts": 10,
+    "descripcion": "Lampara Vintage Galponera",
+    "imagen": "https://i.pinimg.com/originals/c3/30/c5/c330c55434ce6621bcd191dac4b83811.jpg",
+    "precio": 1500,
+    "stock": 10,
+    "categoria": "Vintage"
+  },
+  {
+    "id": 2,
+    "nombre": "Lampara Led",
+    "Watts": 12,
+    "descripcion": "Clasica Lampara Led",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZKsLo9QuKGojaPo7IzXAGMPxFSSsegSt4dssPkFngG9edlkUoFDaVbkOup8zRZMBxqA8&usqp=CAU",
+    "precio": 1600,
+    "stock": 9,
+    "categoria": "Iluminacion"
+  },
+  {
+    "id": 3,
+    "nombre": "Reflector",
+    "Watts": 30,
+    "descripcion": "Clásico Reflector para lugares amplios",
+    "imagen": "https://cdn.shopify.com/s/files/1/0201/8228/products/Wall-light-with-white-inner-reflector_400x.jpg?v=1632286754",
+    "precio": 1700,
+    "stock": 8,
+    "categoria": "Iluminacion"
+  },
+  {
+    "id": 4,
+    "nombre": "Lampara Gota",
+    "Watts": 9,
+    "descripcion": "Lampara Gota Estilo Vintage Nordico",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_943123-MLA49085875503_022022-O.webp",
+    "precio": 800,
+    "stock": 7,
+    "categoria": "Iluminacion"
+  },
+  {
+    "id": 6,
+    "nombre": "Lampara Globo Vintage",
+    "Watts": 12,
+    "descripcion": "Hermosa Lampara de Globo Estilio vintage.",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_877431-MLA49323841527_032022-C.jpg",
+    "precio": 1300,
+    "stock": 6,
+    "categoria": "Vintage"
+  },
+  {
+    "id": 7,
+    "nombre": "Lampara Filamento Vintage",
+    "Watts": 10,
+    "descripcion": "Lampara Clasica Galponera, con filamento Vintage.",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_961497-MLA31083425754_062019-F.webp",
+    "precio": 700,
+    "stock": 12,
+    "categoria": "Vintage"
+  },
+  {
+    "id": 8,
+    "nombre": "Lampara Fuegos Artificaiales",
+    "Watts": 15,
+    "descripcion": "Lampara muy polémica con Fuegos Artificiales.",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_776385-MLA52541864633_112022-O.webp",
+    "precio": 800,
+    "stock": 10,
+    "categoria": "Iluminacion"
+  },
+  {
+    "id": 9,
+    "nombre": "Lampara Vela Vintage",
+    "Watts": 9,
+    "descripcion": "Lampara Vela tipo Vintage",
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_669469-MLA44569040338_012021-F.webp",
+    "precio": 600,
+    "stock": 8,
+    "categoria": "Vintage"
+  }
 ]
