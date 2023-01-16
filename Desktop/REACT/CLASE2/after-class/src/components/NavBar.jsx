@@ -20,7 +20,7 @@ const NavBar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse br" id="navbarNav">
+        <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
               <NavLink
@@ -29,7 +29,7 @@ const NavBar = () => {
                 to={"/category/Vintage"}
               >
                 {" "}
-                Luces Vintage
+                Vintage Design
               </NavLink>
             </li>
             <li className="nav-item">
@@ -38,7 +38,7 @@ const NavBar = () => {
                 activeclassname="page"
                 to={"/category/Iluminacion"}
               >
-                Iluminacion
+                Modern Design
               </NavLink>
             </li>
             <li className="nav-item">
@@ -53,7 +53,7 @@ const NavBar = () => {
           </ul> 
         </div>
       </div>
-      <div className="col-md-6 justify-content-end">
+      <div className="col-md-6 d-flex align-items-center justify-content-end">
         <CartWidget />
       </div>
     </nav>

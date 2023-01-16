@@ -39,17 +39,17 @@ const Footer = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="" target="_blank"rel="noreferrer" >
+              <a className="nav-link text-white" href="/" target="_blank"rel="noreferrer" >
                 Defensa del Consumidor
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="" target="_blank " rel="noreferrer">
+              <a className="nav-link text-white" href="/" target="_blank " rel="noreferrer">
                 Protección de datos personales
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="" target="_blank" rel="noreferrer">
+              <a className="nav-link text-white" href="/" target="_blank" rel="noreferrer">
                 Contacto
               </a>
             </li>

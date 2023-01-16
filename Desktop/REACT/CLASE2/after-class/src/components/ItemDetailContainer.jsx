@@ -3,10 +3,12 @@ import { useParams } from "react-router-dom";
 import {doc, getDoc, getFirestore} from "firebase/firestore";
 import arrayProductos from "./json/productos.json";
 import ItemDetail from "./ItemDetail";
+import Loading from "./Loading";
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState([]);
   const { id } = useParams();
+  const[loading, setLoading] =useState(true);
 
 /*     useEffect(() => {
     const promesa = new Promise((resolve, reject) => {
@@ -25,6 +27,7 @@ const ItemDetailContainer = () => {
     getDoc(item).then((snapShot) => {
         if (snapShot.exists()) {
             setItem({id:snapShot.id, ...snapShot.data()});
+            setLoading(false);
         } else {
             console.log("El Producto No Existe!");
         }
@@ -33,7 +36,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div className="container my-5">
-        <ItemDetail item={item} />
+         {loading ? <Loading /> : <ItemDetail item={item} />}
     </div>
   );
 };

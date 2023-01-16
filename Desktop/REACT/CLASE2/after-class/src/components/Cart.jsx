@@ -10,8 +10,8 @@ const Cart = () => {
             <div className="container">
                 <div className="row my-5">
                     <div className="col-md-12 text-center">
-                        <div className="alert alert-danger" role="alert">No se encontraron Productos en el Carrito!</div>
-                        <Link to={"/"} className="btn btn-warning">Volver a la Página Principal</Link>
+                        <div className="alert alert-info" role="alert">No se encontraron Productos en el Carrito!</div>
+                        <Link to={"/"} className="btn btn-info">Volver a la Página Principal</Link>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@ const Cart = () => {
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col" colSpan={5} className="text-end"><Link onClick={clear} className="btn btn-warning" title={"Vaciar Carrito"}>Vaciar Carrito</Link></th>
+                                <th scope="col" colSpan={5} className="text-end"><Link onClick={clear} className="btn btn-info" title={"Vaciar Carrito"}>Vaciar Carrito</Link></th>
                             </tr>
                             <tr>
                                 <th scope="col">&nbsp;</th>
@@ -42,7 +42,7 @@ const Cart = () => {
                                     <td className="align-middle">{item.nombre}</td>
                                     <td className="align-middle text-end">{item.quantity}</td>
                                     <td className="align-middle text-end">${item.quantity * item.precio}</td>
-                                    <td className="align-middle text-end"><Link onClick={() => {removeItem(item.id)}} title={"Eliminar Producto"}><img src={"/images/trash2.svg"} alt={"Eliminar Producto"} width={32} /></Link></td>
+                                    <td className="align-middle text-end"><Link onClick={() => {removeItem(item.id)}} title={"Eliminar Producto"}><img src={"/images/basket.svg"} alt={"Eliminar Producto"} width={32} /></Link></td>
                                 </tr>
                                 ))
                             }
@@ -50,7 +50,8 @@ const Cart = () => {
                                 <td colSpan={2}>&nbsp;</td>
                                 <td className="text-end"><b>Total a Pagar</b></td>
                                 <td className="text-end"><b>${sumTotal()}</b></td>
-                                <td className="text-end"><button className="btn btn-warning">Finalizar Compra</button></td>
+                                <td className="text-end"><Link to={"/Checkout"} className="btn btn-info">Finalizar Compra</Link></td>
+                                <td className="text-end"><Link to={"/CheckoutPrimerCompra"} className="btn btn-info">10% de Descuento, si me saco DIEZ.</Link></td>
                             </tr>
                         </tbody>
                     </table>    

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 /* import arrayProductos from "./json/productos.json"; */
 import ItemList from "./ItemList";
-import Loader from "./Loader";
 import { addDoc, collection, getDocs, getFirestore, query, where, limit } from "firebase/firestore";
 import Item from "./Item";
+import Loading from "./Loading";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -24,12 +24,13 @@ const ItemListContainer = () => {
 
     getDocs(q).then((snapShot) => {
       setItems(snapShot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+      setLoading(false);
     });
   }, [id]);
 
   return (
     <div className="container">
-      {/* loading ? <Loader /> :  */<ItemList items={items} />}
+      {loading ? <Loading /> : <ItemList items={items} />}
     </div>
   );
 };
